@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialogs.Dialog_icon_Activity">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VISIT NEPAL2025"
+        android:textStyle="bold"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="are you gonna visit this year? "
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ktm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:textSize="9sp"
+            android:text="yes"
+            android:id="@+id/btn_yes"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="200dp" />
+
+        <Button
+            android:textSize="9sp"
+            android:text="No"
+            android:id="@+id/btn_no"
+            android:layout_width="80dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+</LinearLayout>

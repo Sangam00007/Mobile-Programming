@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sangam</string>
+    <string name="add_user">Add User</string>
+    <string name="welcome">Welcome Back 👋</string>
+
+
+    <string-array name="Days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
+</resources>

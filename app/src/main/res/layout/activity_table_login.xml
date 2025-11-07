@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_login_activity">
+
+    <TableRow>
+    <TextView
+        android:text="Welcome Back!"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:padding="15dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="You Have Been Missed"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Email"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:hint="Enter Your Email Address"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="1"
+           android:text="Password"
+           android:gravity="left" />
+    </TableRow>
+    <TableRow>
+        <EditText
+           android:hint="Enter Your Password" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+         android:text="Forgot Password?" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_weight="1"
+          android:text="Login"  />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dribbleui">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+       />
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login With"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        tools:context=".Dribbleui"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_rounded_rect"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:width="200dp"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        />
+
+    <Button
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/bg_rounded_rect"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:width="200dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook" />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textSize="25dp"
+/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:background="@drawable/bg_rounded_rect"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:width="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email " />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:background="@drawable/bg_rounded_rect"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:width="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" Enter Your Password" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="250dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?" />
+
+
+    <CheckBox
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me" />
+
+    <Button
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:width="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in" />
+
+
+</LinearLayout>

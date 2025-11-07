@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassActivity">
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_Good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_forgot_password"
+        android:layout_centerHorizontal="true"
+        android:text="Reset your password now!"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_Good"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="20dp"
+        android:src="@android:drawable/btn_plus" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Good"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/img_email"
+        android:hint="Enter your email address" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_email"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:text="Login" />
+
+
+</RelativeLayout>

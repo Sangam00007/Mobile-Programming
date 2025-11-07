@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_test_activity">
+
+    <TableRow>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="S.No"
+            android:padding="5dp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Full Name"
+            android:padding="5dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Address"
+            android:padding="5dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Phone"
+            android:padding="5dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="1"
+            android:padding="5dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Joyesh Shrestha"
+            android:padding="5dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="America"
+            android:padding="5dp"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="9805555023"
+            android:padding="5dp"/>
+    </TableRow>
+
+    <Button android:text="Login" />
+
+</TableLayout>
