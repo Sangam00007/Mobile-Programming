@@ -31,6 +31,7 @@ public class MyAdapterActivity extends AppCompatActivity {
       Spinner comboBox = findViewById(R.id.spinner);
        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Days,
                android.R.layout.simple_list_item_1);
+
 comboBox.setAdapter(adapter);
 comboBox.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
     @Override

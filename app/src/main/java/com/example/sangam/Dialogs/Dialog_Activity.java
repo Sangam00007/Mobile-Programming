@@ -39,16 +39,6 @@ public class Dialog_Activity extends AppCompatActivity {
                Button btnyes = myDialog.findViewById(R.id.btn_yes);
                Button btnno = myDialog.findViewById(R.id.btn_no);
 
-               btnyes.setOnClickListener(new View.OnClickListener() {
-                   @Override
-                   public void onClick(View v) {
-                       Toast.makeText(Dialog_Activity.this,"Ghumana jauu na tw", Toast.LENGTH_SHORT.show());
-                       myDialog.dismiss();
-                   }
-               });
-
-
-
             myDialog.show();
            }
        });
