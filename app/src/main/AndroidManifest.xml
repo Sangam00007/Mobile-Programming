@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sangam">
         <activity
+            android:name=".Fragment.MyShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.HostActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".TestRecycleActivity"
             android:exported="true">
             <intent-filter>
@@ -37,11 +49,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".test.my_list_row"
-            android:exported="false">
-            
         </activity>
         <activity
             android:name=".Classwork.Practice_Activity"
