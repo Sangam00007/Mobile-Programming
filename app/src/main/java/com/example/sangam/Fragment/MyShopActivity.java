@@ -35,30 +35,39 @@ public class MyShopActivity extends AppCompatActivity {
         Button btnsetting = findViewById(R.id.Setting);
         Button btncart = findViewById(R.id.Cart);
 
+
         //Home Ko click garne
         btnhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MyShopActivity.this, "home button", Toast.LENGTH_SHORT).show();
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//
+//                HomeFragment home = new HomeFragment();
+//                transaction.replace(R.id.frame, home);
+//                transaction.commit();
+
                 HomeFragment home = new HomeFragment();
-                transaction.replace(R.id.frame, home);
-                transaction.commit();
+                switchFragment(home);
 
             }
         });
+
 
         //Profile Ko click garne
         btnprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MyShopActivity.this, "profile button", Toast.LENGTH_SHORT).show();
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//
+//                ProfileFragment profile = new ProfileFragment();
+//                transaction.replace(R.id.frame, profile);
+//                transaction.commit();
                 ProfileFragment profile = new ProfileFragment();
-                transaction.replace(R.id.frame, profile);
-                transaction.commit();
+                switchFragment(profile);
             }
         });
 
@@ -66,12 +75,15 @@ public class MyShopActivity extends AppCompatActivity {
         btnsetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Toast.makeText(MyShopActivity.this, "setting button", Toast.LENGTH_SHORT).show();
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
+                // Toast.makeText(MyShopActivity.this, "setting button", Toast.LENGTH_SHORT).show();
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//
+//                SettingFragment setting = new SettingFragment();
+//                transaction.replace(R.id.frame, setting);
+//                transaction.commit();
                 SettingFragment setting = new SettingFragment();
-                transaction.replace(R.id.frame, setting);
-                transaction.commit();
+                switchFragment(setting);
             }
         });
 
@@ -79,15 +91,28 @@ public class MyShopActivity extends AppCompatActivity {
         btncart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Toast.makeText(MyShopActivity.this, "cart button", Toast.LENGTH_SHORT).show();
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
+                // Toast.makeText(MyShopActivity.this, "cart button", Toast.LENGTH_SHORT).show();
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//
+//                CartFragment cart = new CartFragment();
+//                transaction.replace(R.id.frame, cart);
+//                transaction.commit();
                 CartFragment cart = new CartFragment();
-                transaction.replace(R.id.frame, cart);
-                transaction.commit();
+                switchFragment(cart);
+
             }
         });
-
-
     }
+
+    void switchFragment(Fragment fragment) {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+
+        HomeFragment home = new HomeFragment();
+        transaction.replace(R.id.frame, fragment);
+        transaction.commit();
+    }
+
+
 }
