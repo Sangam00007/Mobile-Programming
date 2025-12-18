@@ -111,6 +111,7 @@ public class MyShopActivity extends AppCompatActivity {
 
         HomeFragment home = new HomeFragment();
         transaction.replace(R.id.frame, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
 
